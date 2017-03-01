@@ -1,0 +1,14 @@
+﻿@model IEnumerable<CarsIndexVM>
+@{
+    ViewBag.Title = "Cars";
+}
+
+
+<h3>Cars</h3>
+<ul>
+    @foreach (var car in Model)
+    {
+        <li>@Html.Partial("CarBox", car)</li>        
+    }
+</ul>
+
